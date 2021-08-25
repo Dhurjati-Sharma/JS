@@ -1,3 +1,4 @@
+
 var d = document;
 var game = d;
 cas = 0
@@ -6,15 +7,13 @@ var devicestorage = localStorage
 var Question3Answer
 var Question2Answer
 var Question1Answer
+window.onload = function nnnnn() {
+Question1Answer.toUpperCase();
+Question2Answer.toUpperCase();
+Question3Answer.toUpperCase();}
 var baud = new Audio("./sounds/wrong.wav");
 var aud = new Audio("./sounds/start.wav");
 var body = d.getElementsByTagName('body')
-Question1Answer.toUpperCase()
-Question2Answer.toUpperCase()
-Question3Answer.toUpperCase()
-
-
-
 history.pushState(null, null, document.URL);
 window.addEventListener('popstate', function () {
     history.pushState(null, null, document.URL);
