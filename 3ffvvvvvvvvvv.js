@@ -8,6 +8,8 @@ var Question3Answer
 var Question2Answer
 var Question1Answer
 var Question1Answermd = Question1Answer.toUpperCase()
+var Question2Answermd = Question2Answer.toUpperCase()
+var Question3Answermd = Question3Answer.toUpperCase()
 
 var baud = new Audio("./sounds/wrong.wav");
 var aud = new Audio("./sounds/start.wav");
@@ -70,7 +72,7 @@ function hk() {
 }
 function chkq2ofgame() {
     var chkinput = d.getElementById("cq2").value
-    if (chkinput == Question2Answer) {
+    if (chkinput == Question2Answermd) {
         var aud = new Audio("./sounds/start.wav");
 Question3Answer.toUpperCase();
 
@@ -95,7 +97,7 @@ Question3Answer.toUpperCase();
 }
 function chkq3ofgame() {
     var chkinput = d.getElementById("cq3").value
-    if (chkinput == Question3Answer) {
+    if (chkinput == Question3Answermd) {
         var aud = new Audio("./sounds/start.wav");
         d.getElementById("noneneonenenoneien").style.display = "t"
         d.getElementById("chair3").style.display = "none"
