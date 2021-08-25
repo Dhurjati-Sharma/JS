@@ -14,14 +14,15 @@ if (window.location.search == "?open") {
 
   $(document).ready(function () {
     $("#exampleModal").modal('show');
-if(requirepassword==true){
+
+    window.onload = function hev() {
+      if (d.getElementById("g").style.display = "block") { d.getElementById("g").style.display = "none" }
+      if(requirepassword==true){
     d.getElementById("passname").innerHTML = logincode
     d.getElementById("passname").title = "Password: " + logincode}
     else{
     d.getElementById("dhujtjtfhyf").style.display = "none"
     }    $("#f").addClass("hide");
-    window.onload = function hev() {
-      if (d.getElementById("g").style.display = "block") { d.getElementById("g").style.display = "none" }
       return true
 
     }
