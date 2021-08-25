@@ -7,10 +7,7 @@ var devicestorage = localStorage
 var Question3Answer
 var Question2Answer
 var Question1Answer
-window.onload = function nnnnn() {
-Question1Answer.toUpperCase();
-Question2Answer.toUpperCase();
-Question3Answer.toUpperCase();}
+
 var baud = new Audio("./sounds/wrong.wav");
 var aud = new Audio("./sounds/start.wav");
 var body = d.getElementsByTagName('body')
@@ -33,6 +30,8 @@ function platfunc() {
     d.getElementById('op').style.display = "none"
     var aud = new Audio("./sounds/start.wav");
     aud.addEventListener("canplay", _evt => { aud.play(); });
+    Question1Answer.toUpperCase()
+
 }
 function chkq1ofgame() {
     var chkinput = d.getElementById("cq1").value
@@ -41,11 +40,14 @@ function chkq1ofgame() {
 
         aud.addEventListener("canplay", _evt => { aud.play(); });
         d.getElementById("chair1").style.display = "none"
+        Question2Answer.toUpperCase();
+
         d.getElementById("yy").style.display = "block"
         d.getElementById("xx").style.display = "none"
 
         cas += 1
         hf()
+        
     }
     else {
         var baud = new Audio("./sounds/wrong.wav");
@@ -70,6 +72,7 @@ function chkq2ofgame() {
     var chkinput = d.getElementById("cq2").value
     if (chkinput == Question2Answer) {
         var aud = new Audio("./sounds/start.wav");
+Question3Answer.toUpperCase();
 
         d.getElementById("chair2").style.display = "none"
         aud.addEventListener("canplay", _evt => { aud.play(); });
