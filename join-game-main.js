@@ -20,7 +20,6 @@ var xp = d.getElementById("name");
 var xo = d.getElementById("coupon");
 var d = document;
 var noname;
-var game = d;
 var chkbox = d.getElementById("saveinbr")
 var displaysavealert;
 window.onload = function hy() {
