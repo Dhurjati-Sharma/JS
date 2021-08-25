@@ -10,6 +10,12 @@ if (window.location.search == "?chkkey") {
   }
 }
 if (window.location.search == "?open") {
+      if(requirepassword==true){
+    d.getElementById("passname").innerHTML = logincode
+    d.getElementById("passname").title = "Password: " + logincode}
+    else{
+    d.getElementById("dhujtjtfhyf").style.display = "none"
+    }
 
   $(document).ready(function () {
     $("#exampleModal").modal('show');
@@ -27,12 +33,6 @@ if (window.location.search == "?open") {
     
     d.getElementById("analyticname").innerHTML = localStorage.getItem("pointsname")
     d.getElementById("analyticname").title = "Username: " + localStorage.getItem("pointsname")
-    if(requirepassword==true){
-    d.getElementById("passname").innerHTML = logincode
-    d.getElementById("passname").title = "Password: " + logincode}
-    else{
-    d.getElementById("dhujtjtfhyf").style.display = "none"
-    }
     d.getElementById("dhujtjtfhyf").style.display = "block"
     document.getElementById("myhellclose").style.display = "none"
     document.getElementById("myhellclosed").style.display = "block"
