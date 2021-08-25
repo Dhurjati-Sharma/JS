@@ -7,6 +7,7 @@ var devicestorage = localStorage
 var Question3Answer
 var Question2Answer
 var Question1Answer
+var Question1Answermd = Question1Answer.toUpperCase()
 
 var baud = new Audio("./sounds/wrong.wav");
 var aud = new Audio("./sounds/start.wav");
@@ -30,12 +31,11 @@ function platfunc() {
     d.getElementById('op').style.display = "none"
     var aud = new Audio("./sounds/start.wav");
     aud.addEventListener("canplay", _evt => { aud.play(); });
-    Question1Answer.toUpperCase()
 
 }
 function chkq1ofgame() {
     var chkinput = d.getElementById("cq1").value
-    if (chkinput == Question1Answer) {
+    if (chkinput == Question1Answermd) {
         var aud = new Audio("./sounds/start.wav");
 
         aud.addEventListener("canplay", _evt => { aud.play(); });
