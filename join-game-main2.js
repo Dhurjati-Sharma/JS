@@ -1,5 +1,6 @@
 //Don't Edit Anything From Below Or else it will no longer work
 var key = "10H84-45H83-Z1MH2-D4QN9-G38MK";
+var d = document;
 var EnterYourkey;
 var authenticate = false;
 var save;
@@ -18,7 +19,6 @@ var Question1
 var Question2
 var xp = d.getElementById("name");
 var xo = d.getElementById("coupon");
-var d = document;
 var noname;
 var chkbox = d.getElementById("saveinbr")
 var displaysavealert;
