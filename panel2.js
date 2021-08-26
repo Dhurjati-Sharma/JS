@@ -121,8 +121,8 @@ function chkq3ofgame() {
         was += 1
         hk()
             alert("The Answer Is Incorrect")
-
-                d.getElementById("yy").style.display = "none"
+pushalltolocaltsotrage()
+                d.getElementById("zz").style.display = "none"
         d.getElementById("donegamefunction").style.display = "block"
     }
 }
