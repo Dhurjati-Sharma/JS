@@ -122,6 +122,8 @@ function chkq3ofgame() {
         hk()
             alert("The Answer Is Incorrect")
 
+                d.getElementById("yy").style.display = "none"
+        d.getElementById("donegamefunction").style.display = "block"
     }
 }
 function savetosessionstorgae() {
